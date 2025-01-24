@@ -42,184 +42,184 @@ RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        vulkan-loader \
-        || true && \
+    vulkan-loader \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        alsa-lib \
-        || true && \
+    alsa-lib \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        gnutls \
-        || true && \
+    gnutls \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        glib2 \
-        || true && \
+    glib2 \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        nspr \
-        || true && \
+    nspr \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        nss \
-        nss-softokn \
-        nss-softokn-freebl \
-        nss-sysinit \
-        nss-util \
-        || true && \
+    nss \
+    nss-softokn \
+    nss-softokn-freebl \
+    nss-sysinit \
+    nss-util \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        atk \
-        at-spi2-atk \
-        || true && \
+    atk \
+    at-spi2-atk \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libaom \
-        || true && \
+    libaom \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        gstreamer1 \
-        gstreamer1-plugins-base \
-        || true && \
+    gstreamer1 \
+    gstreamer1-plugins-base \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libdecor \
-        || true && \
+    libdecor \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libtirpc \
-        || true && \
+    libtirpc \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libuuid \
-        || true && \
+    libuuid \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libblkid \
-        || true && \
+    libblkid \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libmount \
-        || true && \
+    libmount \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        cups-libs \
-        || true && \
+    cups-libs \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libinput \
-        || true && \
+    libinput \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libopenmpt \
-        || true && \
+    libopenmpt \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        llvm-libs \
-        || true && \
+    llvm-libs \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        zlib-ng-compat \
-        || true && \
+    zlib-ng-compat \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        fontconfig \
-        || true && \
+    fontconfig \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        pciutils-libs \
-        || true && \
+    pciutils-libs \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libdrm \
-        || true && \
+    libdrm \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        cpp \
-        libatomic \
-        libgcc \
-        libgfortran \
-        libgomp \
-        libobjc \
-        libstdc++ \
-        || true && \
+    cpp \
+    libatomic \
+    libgcc \
+    libgfortran \
+    libgomp \
+    libobjc \
+    libstdc++ \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libX11 \
-        libX11-common \
-        libX11-xcb \
-        || true && \
+    libX11 \
+    libX11-common \
+    libX11-xcb \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libv4l \
-        || true && \
+    libv4l \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        elfutils-libelf \
-        elfutils-libs \
-        || true && \
+    elfutils-libelf \
+    elfutils-libs \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        glibc \
-        glibc-common \
-        glibc-all-langpacks \
-        glibc-gconv-extra \
-        || true && \
+    glibc \
+    glibc-common \
+    glibc-all-langpacks \
+    glibc-gconv-extra \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        libxcrypt \
-        || true && \
+    libxcrypt \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        SDL2 \
-        || true && \
+    SDL2 \
+    || true && \
     rpm-ostree override replace \
     --experimental \
     --from repo=updates \
-        openldap \
-        || true && \
+    openldap \
+    || true && \
     if grep -q "kinoite" <<< "${BASE_IMAGE_NAME}"; then \
-        rpm-ostree override replace \
-        --experimental \
-        --from repo=updates \
-            qt6-qtbase \
-            qt6-qtbase-common \
-            qt6-qtbase-mysql \
-            qt6-qtbase-gui \
-            || true \
+    rpm-ostree override replace \
+    --experimental \
+    --from repo=updates \
+    qt6-qtbase \
+    qt6-qtbase-common \
+    qt6-qtbase-mysql \
+    qt6-qtbase-gui \
+    || true \
     ; fi && \
     rpm-ostree override remove \
-        glibc32 \
-        || true && \
+    glibc32 \
+    || true && \
     /usr/libexec/containerbuild/cleanup.sh && \
     ostree container commit
 
